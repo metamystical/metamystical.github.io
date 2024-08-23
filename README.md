@@ -35,8 +35,5 @@ Github page with usage instructions: https://metamystical.github.io/shared-secre
   </ul>
   <p>TweetNaCl.js was ported from <a href="http://tweetnacl.cr.yp.to/">TweetNaCl</a> / <a href="http://nacl.cr.yp.to/">NaCl.</a></p>
 
-### Sister site
-https://shared-secret.github.io
-
 
 
