@@ -2,13 +2,21 @@
 Digitally sign text using a mnemonic seed.
 Uses the TweetNaCl-js implementaion of Ed25519 DSA (Digital Signature Algorithm) and SHA-512 for hashing the mnemonic seed.
 
-Github page with usage instructions: https://hash-and-sign.github.io
+Github page with usage instructions: https://metamystical.github.io
 
 ## hash-and-crypt
 Simple encryption using a mnemonic seed.
 Uses the TweetNaCl-js implementaion of Salsa20 and Poly1305 for encryption and SHA-512half for hashing the seed.
 
-Github page with usage instructions: https://hash-and-sign.github.io/hash-and-crypt.html
+Github page with usage instructions: https://metamystical.github.io/hash-and-crypt.html
+
+## shared-secret.github.io
+Create a secret password known only to you and another party, without ever communicating it.
+Uses the TweetNaCl-js implementaion of Curve25519 Diffie-Hellman key exchange.
+Optionally, short text messages may be encrypted/decrypted with the secret password
+using Salsa20 and Poly1305.
+
+Github page with usage instructions: https://metamystical.github.io/shared-secret.html
 
 ### Security notes
   <p>The above HTML page, once served to your computer, has no further communication
