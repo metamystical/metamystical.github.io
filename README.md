@@ -10,7 +10,7 @@ Uses the TweetNaCl-js implementaion of Salsa20 and Poly1305 for encryption and S
 
 Github page with usage instructions: [hash-and-crypt.html](https://metamystical.github.io/hash-and-crypt.html)
 
-## shared-secret.github.io
+## shared-secret
 Create a secret password known only to you and another party, without ever communicating it.
 Uses the TweetNaCl-js implementaion of Curve25519 Diffie-Hellman key exchange.
 Optionally, short text messages may be encrypted/decrypted with the secret password
