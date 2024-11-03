@@ -57,12 +57,11 @@ function copyText (id) {
 }
 </script>
 <style>
-  body { font-family: arial; font-size: 12px; color: white; background-color: #0C090A; }
+  body { font-family: consolas; font-size: 14px; color: white; background-color: #0C090A; }
   a { color: lightblue; }
-  div { margin: auto; width: 600px; }
+  div { margin: auto; width: 800px; }
   textarea, .button { color: black; background-color: lightblue; }
-  textarea { font-size: 10px; margin-bottom: 10px; }
-  textarea{ width: 100%; }
+  textarea { font-size: 12px; width: 100%; margin-bottom: 10px; }
   .button { padding: 3px; font-weight: bold; margin-left: 15px; }
   .right { text-align: right; }
   #text { height: 70px; }
@@ -85,6 +84,17 @@ function copyText (id) {
 <li>They should be securely stored and kept private because they are used to generate your secret encryption/decryption key.</li>
 <li>Type or paste text into the <i>Message</i> box and click on the <i>Encrypt/decrypt</i> button. The encrypted message appears in the <i>Message</i> box in place of the original message.</li>
 </ol>
-<a href="https://github.com/metamystical/metamystical.github.io">Source code and security notes</a>
+<h3>Technical notes:</h3>
+This page uses the TweetNaCl-js implementaion of Ed25519 DSA (Digital Signature Algorithm) and SHA-512 for hashing the mnemonic seed.
+<p>
+Once it is served to your computer, has no further communication with the server or any other entity. No cookies or local data storage are created when the pages run in your browser. Therefore, secret data exist only temporarily within the browser while it is open, unless manually copied elsewhere. The browser cache should be cleared before closing it. The clipboard should also be cleared if a secret was copied to it.
+<p>
+For enhanced peace of mind, save this HTML page to your computer when it is blank and move it to an offline computer before using. Review the dowloaded code, which includes the two libraries nacl.min.js and nacl-util.min.js, obtained from Github user dchest (Dmitry Chestnykh). The originals are available at these links along with non-minified (and possibly more recent) versions:
+<ol>
+<li><a href="https://github.com/dchest/tweetnacl-js/releases/tag/1.0.3">tweetnacl-js 1.0.3</a></li>
+<li><a href="https://github.com/dchest/tweetnacl-util-js/releases/tag/v0.15.0">tweetnacl-util-js v0.15.0</a></li>
+</ol>
+TweetNaCl.js was ported from <a href="http://tweetnacl.cr.yp.to">TweetNaCl / NaCl</a>.
 </div>
+<br>
 </body></html>
